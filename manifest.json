@@ -1,6 +1,6 @@
 {
-  "name": "Marcación Focus",
-  "short_name": "Marcación",
+  "name": "JBP App",
+  "short_name": "JBP App",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
