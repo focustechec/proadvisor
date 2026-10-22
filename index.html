@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Aplicación AppSheet</title>
+  <title>JBP App</title>
+
+  <!-- Ícono y nombre del atajo -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="JBP App">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+
   <style>
     body, html {
       margin: 0;
@@ -19,6 +28,13 @@
   </style>
 </head>
 <body>
-  <iframe src="https://www.appsheet.com/start/93974f4c-5029-43b8-a1a8-e144407c14f3?platform=desktop#appName=JBPApp20-94643661&vss=H4sIAAAAAAAAA6WOMQ7CMAxF7_LnnCArYkAIliIWwhAaF0W0SUVcoIpydxKgghUY_e33_CMulq4V6_oEuYvvaUkjJKLCZuxJQSrMvOOzbxWEwlp3z7AiZuuOQSEh7cXEMwXI-B0u__suYA05to2lc3EVMjteXF4XKgcTgyTQDawPLT0KF8aGhZsbyytv8tzoNlBK-a7x9RDIbHO9H2oV6a3Xznxq70sAcQF5AQAA&view=Settings"></iframe>
+  <iframe
+    src="https://www.appsheet.com/start/93974f4c-5029-43b8-a1a8-e144407c14f3?platform=desktop#appName=JBPApp20-94643661&vss=H4sIAAAAAAAAA6WOMQ7CMAxF7_LnnCArYkAIliIWwhAaF0W0SUVcoIpydxKgghUY_e33_CMulq4V6_oEuYvvaUkjJKLCZuxJQSrMvOOzbxWEwlp3z7AiZuuOQSEh7cXEMwXI-B0u__suYA05to2lc3EVMjteXF4XKgcTgyTQDawPLT0KF8aGhZsbyytv8tzoNlBK-a7x9RDIbHO9H2oV6a3Xznxq70sAcQF5AQAA&view=Settings"
+    allow="geolocation *; camera *; microphone *; fullscreen *; clipboard-write *">
+  </iframe>
+  <script>
+    // Si Safari muestra esta página desde "Atrás", la recarga para traer datos nuevos
+    window.addEventListener("pageshow", e => { if (e.persisted) location.reload(); });
+  </script>
 </body>
 </html>
